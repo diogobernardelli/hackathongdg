@@ -1,0 +1,47 @@
+
+<div class="overlay"></div>
+<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+  <source src="assets/teste.mp4" type="video/mp4">
+</video>
+
+<div class="masthead">
+  <div class="masthead-bg"></div>
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="col-12 my-auto">
+        <div class="masthead-content text-white py-5 py-md-0">
+          <img src="assets/logo.png" alt="Smiley face" height="80%" width="80%">
+          <p class="mb-5">Veja se o <strong>seu candidato</strong> irá cumprir o combinado!</p>
+          
+          <%= form_tag deputies_path, url: deputies_path, class: "input-group input-group-newsletter", method: :get do %>
+            <%= text_field_tag :by_name, params[:by_name], placeholder: 'Para quem foi seu voto?', class: 'form-control mr-sm-2' %>
+            
+            <div class="input-group-append">
+              <%= submit_tag 'Buscar', class: 'btn btn-secondary' %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="social-icons">
+  <ul class="list-unstyled text-center mb-0">
+    <li class="list-unstyled-item">
+      <a href="https://twitter.com" target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li class="list-unstyled-item">
+      <a href="http://facebook.com/vempoliticando" target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li class="list-unstyled-item">
+      <a href="http://instagram.com" target="_blank">
+        <i class="fa fa-instagram"></i>
+      </a>
+    </li>
+  </ul>
+</div>
