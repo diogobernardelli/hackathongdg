@@ -6,7 +6,7 @@
 git clone git@github.com:diogobernardelli/hackathongdg.git
 ```
 
-- Acesse a pasta referente ao seu projeto
+- Acesse a pasta referente ao seu projeto / time
 
 - Adicione os arquivos do seu projeto, divindo de acordo com as tecnologias. Ex:
     - my-project/
