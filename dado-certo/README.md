@@ -1,3 +1,3 @@
-# fuckyou-android
+# Hackathon GDG
 
-This is an aleatory app to apply new technologies that we want to learn.
+Link da apresentação: https://drive.google.com/file/d/1nDvRuBUkXcFD0MAVRMwJtndOsH0LOkm0/view
