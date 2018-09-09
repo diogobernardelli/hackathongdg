@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+            OneSignal.init({
+                appId: "a83c08cf-9d85-4ae7-ace5-ee12cf302e67",
+            });
+        });
+    </script>
+    <meta http-equiv="Content-Language" content="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display" rel="stylesheet">
+    <title>Alerta de Gastos</title>
+</head>
+
+<body>
+    <nav id="top-bar" class="draggable">
+        <div id="menu">
+            <img src="logo.png" width="36px" onclick="toggleMenu()" />
+            <ul>
+                <li class="saude"><label><input type="checkbox" onclick="filter('Saúde')" checked>Saúde</label></li>
+                <li class="educacao"><label><input type="checkbox" onclick="filter('Educação')" checked>Educação</label></li>
+                <li class="seguranca"><label><input type="checkbox" onclick="filter('Segurança')" checked>Segurança</label></li>
+                <li class="obras-publicas"><label><input type="checkbox" onclick="filter('Obras Públicas')" checked>Obras Públicas</label></li>
+                <li class="transporte"><label><input type="checkbox" onclick="filter('Transporte')" checked>Transporte</label></li>
+                <li class="cultura"><label><input type="checkbox" onclick="filter('Cultura')" checked>Cultura</label></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="content" onclick="hideMenu()">
+        <!-- articles -->
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="actionForm.js"></script>
+<script src="controller.js"></script>
+<script>
+    window.onload = function() {
+        getInitialData();
+    }
+</script>
+
+</html>
