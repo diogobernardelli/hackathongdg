@@ -1,0 +1,19 @@
+<main role="main" class="container is-none-image">
+  <div class="my-3 p-3 bg-white rounded shadow-sm">
+    <h6 class="border-bottom border-gray pb-2">Informe seus dados para notificação</h6>
+
+    <%= form_for @user, url: user_path(@user.id), method: :put, html: {class: "form-inline"} do |f| %>
+      <div class="form-group mx-sm-3 mb-2">
+        <%= f.label "Nome", class: "sr-only" %>
+        <%= f.text_field :full_name, placeholder: "Informe seu nome completo", required: true, class: "form-control" %>
+      </div>
+
+      <div class="form-group mx-sm-3 mb-2">
+        <%= f.label "Telefone", class: "sr-only" %>
+        <%= f.text_field :phone, placeholder: "Informe seu telefone", required: true, class: "form-control" %>
+      </div>
+
+      <%= f.submit "Salvar", class: "btn btn-primary mb-2" %>
+    <% end %>
+  </div>
+</main>
