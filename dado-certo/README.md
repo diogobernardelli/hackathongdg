@@ -1,3 +1,3 @@
 # Hackathon GDG
 
-Link da apresentação: https://drive.google.com/file/d/1nDvRuBUkXcFD0MAVRMwJtndOsH0LOkm0/view
+Link da apresentação: https://docs.google.com/presentation/d/1VdMq4mREDIsF-s6ll1yTSS-3UmxQTcidFMgyNqxcoHk/edit?usp=sharing
