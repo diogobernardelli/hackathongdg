@@ -14,4 +14,4 @@ git clone git@github.com:diogobernardelli/hackathongdg.git
         - *android/*
         - *ios/*
 
-- Commite para o repositório os arquivos do seu projeto
+- Faça o push para o repositório com os arquivos do seu projeto
