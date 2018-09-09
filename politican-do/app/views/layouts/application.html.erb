@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PolitiCan.do - Você dentro da política</title>
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><link rel="manifest" href="/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBiL7mhdc1AsgE0xeq9IbIfKTqAXeImPJY",
+        authDomain: "acompanhe-seu-politico.firebaseapp.com",
+        databaseURL: "https://acompanhe-seu-politico.firebaseio.com",
+        projectId: "acompanhe-seu-politico",
+        storageBucket: "acompanhe-seu-politico.appspot.com",
+        messagingSenderId: "172945067313"
+      };
+      firebase.initializeApp(config);
+      console.log(firebase);
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json" />
+  <% if has_navbar? %>
+    <body class="bg-light">
+  <% else %>
+    <body class="bg-light has-image">
+  <% end %>
+    <%= render "layouts/navbar" if has_navbar? %>
+    <%= yield %>
+  </body>
+</html>

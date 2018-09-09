@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Unidades
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="cards-bg">
+  <ion-card class="adv-map" *ngFor="let local of remedio.local">
+    <ion-item>
+      <h2>{{local.nome}}</h2>
+    </ion-item>
+    <ion-card-content>
+      <p>{{local.endereco}}</p>
+    </ion-card-content>
+    <ion-item actions>
+      <a class="link" href="tel:+556733365-2330" target="blank">
+        <ion-icon color="dark" large item-start name='call'></ion-icon>
+        <span ion-text item-start color="subtle">(67)3365-2330</span>
+      </a>
+      <ion-icon color="primary" large name='information-circle' item-end (click)="abacaxi(local)"></ion-icon>
+    </ion-item>
+  </ion-card>
+
+</ion-content>
