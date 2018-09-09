@@ -142,7 +142,7 @@ function showWelcome() {
     jQuery("<div/>", {
         class: "welcome-screen",
         "onclick": "jQuery('.welcome-screen').remove()",
-        html: "<span>Nós podemos melhorar a nossa cidade juntos! Como?<br/>Todos os dias recebemos notícias sobre algum gasto do governo, mas quase nunca fiscalizamos.<br/>Agora vamos fazer diferente.<br/><br/>Bem-vindo ao Push Fiscaliza.</span>"
+        html: "<span>A ferramenta para fiscalizar o poder público campo-grandense nas suas mãos.<br/><br/>Push. Fiscalize.</span>"
     }).appendTo("#content");
     jQuery(".welcome-screen").css({ "height": jQuery(window).height() });
 }
